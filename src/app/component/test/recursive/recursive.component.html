@@ -1,0 +1,14 @@
+<tr>
+    <td>
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+    </td>
+    <td>
+        <button mat-icon-button color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+    </td>
+</tr>
+
+<ng-container *ngIf="level < 3">
+    <app-recursive class="table-row" [level]="level + 1"></app-recursive>
+</ng-container>
